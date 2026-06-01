@@ -1,98 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>
-    Curr&iacute;culo | DevStart
-  </title>
+  <title>Currículo | DevStart</title>
   <link href="../style.css" rel="stylesheet" />
   <link rel="icon" href="../assets/LogoDS.svg">
-  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js">
-  </script>
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 </head>
-
 <body>
   <div class="app-shell">
-    <div data-component="sidebar">
-    </div>
-    <div class="menu-overlay">
-    </div>
+    <div data-component="sidebar"></div>
+    <div class="menu-overlay"></div>
     <main class="app-main">
-      <div data-component="header">
-      </div>
+      <div data-component="header"></div>
+
       <section>
-<!-- ATS -->
-<article class="card ats-upload-card" style="margin-top:18px">
-  <div class="ats-header">
-    <div>
-      <h2>Análise ATS de Currículo </h2>
 
-      <p class="lead">
-        Envie seu currículo em PDF ou DOCX e receba uma análise com score,
-        pontos fortes, problemas encontrados e sugestões de melhoria.
-      </p>
-    </div>
-  </div>
+        <section class="cv-hero-section">
 
-  <form class="ats-form" enctype="multipart/form-data" id="atsForm">
-<label class="upload-box" for="curriculo">
-  <span class="iconify" data-icon="lucide:upload-cloud"></span>
+          <div class="cv-hero-grid">
 
-  <strong>Enviar currículo</strong>
+            <div class="cv-hero-copy">
 
-  <small id="uploadText">
-    Clique aqui para selecionar um arquivo PDF ou DOCX
-  </small>
+              <h1 class="title-lg">
+                Crie um currículo compatível com ATS e aumente suas chances de entrevista.
+              </h1>
 
-  <input
-    accept=".pdf,.docx"
-    id="curriculo"
-    name="curriculo"
-    required
-    type="file"
-  >
-</label>
+              <p class="lead">
+                ATS (Applicant Tracking System) é o software utilizado por empresas para organizar e filtrar currículos automaticamente. Aprenda como funciona, utilize um modelo compatível e descubra se seu currículo está preparado para os processos seletivos atuais.
+              </p>
 
-    <div class="field ats-vaga-field">
-      <label for="vaga">
-        Descrição da vaga desejada
-      </label>
+              <div class="hero-actions">
+                <a href="https://github.com/celiobjunior/resume-template#portugu%C3%AAs"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-primary">
+                  Ver modelo ATS
+                </a>
 
-      <textarea
-        id="vaga"
-        name="vaga"
-        placeholder="Cole aqui a descrição da vaga, requisitos ou tecnologias pedidas. Esse campo é opcional."
-      ></textarea>
-    </div>
+                <a href="#atsForm"
+                   class="btn btn-secondary">
+                  Analisar currículo
+                </a>
+              </div>
 
-    <button class="btn btn-primary ats-submit" type="submit">
-      <span class="iconify" data-icon="lucide:scan-search"></span>
-      Analisar currículo
-    </button>
-  </form>
+            </div>
 
-  <div class="ats-result" id="resultadoATS"></div>
-</article>
+            <div class="cv-preview-card">
+
+              <div class="cv-preview-paper">
+
+                <div class="cv-preview-name"></div>
+                <div class="cv-preview-contact"></div>
+
+                <div class="cv-preview-divider"></div>
+
+                <div class="cv-preview-section-title"></div>
+                <div class="cv-preview-row"></div>
+                <div class="cv-preview-row short"></div>
+                <div class="cv-preview-row short"></div>
+
+                <div class="cv-preview-divider"></div>
+
+                <div class="cv-preview-section-title"></div>
+                <div class="cv-preview-row"></div>
+                <div class="cv-preview-row"></div>
+                <div class="cv-preview-row short"></div>
+
+                <div class="cv-preview-divider"></div>
+
+                <div class="cv-preview-section-title"></div>
+                <div class="cv-preview-skill"></div>
+                <div class="cv-preview-skill short"></div>
+
+                <div class="cv-preview-divider"></div>
+
+                <div class="cv-preview-section-title"></div>
+                <div class="cv-preview-row"></div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cv-benefits">
+
+            <article class="card cv-benefit-card">
+              <strong>1</strong>
+              <h3>Entenda o ATS</h3>
+              <p>Descubra como empresas utilizam sistemas automáticos para filtrar currículos.</p>
+            </article>
+
+            <article class="card cv-benefit-card">
+              <strong>2</strong>
+              <h3>Use um modelo adequado</h3>
+              <p>Estruture seu currículo de forma organizada e compatível com ATS.</p>
+            </article>
+
+            <article class="card cv-benefit-card">
+              <strong>3</strong>
+              <h3>Analise gratuitamente</h3>
+              <p>Receba sugestões e identifique pontos de melhoria no seu currículo.</p>
+            </article>
+
+          </div>
+
+        </section>
+
+        <article class="card ats-upload-card" style="margin-top:18px">
+
+          <div class="ats-header">
+            <div>
+              <h2>Análise ATS de Currículo</h2>
+              <p class="lead">
+                Envie seu currículo em PDF ou DOCX e receba uma análise com score,
+                pontos fortes, problemas encontrados e sugestões de melhoria.
+              </p>
+            </div>
+          </div>
+
+          <form class="ats-form" enctype="multipart/form-data" id="atsForm">
+
+            <label class="upload-box" for="curriculo">
+              <span class="iconify" data-icon="lucide:upload-cloud"></span>
+              <strong>Enviar currículo</strong>
+              <small id="uploadText">
+                Clique aqui para selecionar um arquivo PDF ou DOCX
+              </small>
+              <input accept=".pdf,.docx" id="curriculo" name="curriculo" required type="file">
+            </label>
+
+            <div class="field ats-vaga-field">
+              <label for="vaga">Descrição da vaga desejada</label>
+              <textarea id="vaga" name="vaga"
+                placeholder="Cole aqui a descrição da vaga, requisitos ou tecnologias pedidas. Esse campo é opcional."></textarea>
+            </div>
+
+            <button class="btn btn-primary ats-submit" type="submit">
+              <span class="iconify" data-icon="lucide:scan-search"></span>
+              Analisar currículo
+            </button>
+
+          </form>
+
+          <div class="ats-result" id="resultadoATS"></div>
+
+        </article>
+
       </section>
     </main>
   </div>
-  <div aria-hidden="true" class="modal">
-  </div>
-  <div class="toast">
-  </div>
-  <script src="../components/sidebar.js">
-  </script>
-  <script src="../components/header.js">
-  </script>
-    <script src="../data/courses.js"></script>
-    <script src="../data/jobs.js"></script>
-    <script src="../data/tools.js"></script>
-    <script src="../data/roadmaps.js"></script>
-    <script src="../data/projects.js"></script>
-  <script src="../script.js">
-  </script>
-</body>
 
+  <div aria-hidden="true" class="modal"></div>
+  <div class="toast"></div>
+
+  <script src="../components/sidebar.js"></script>
+  <script src="../components/header.js"></script>
+  <script src="../data/courses.js"></script>
+  <script src="../data/jobs.js"></script>
+  <script src="../data/tools.js"></script>
+  <script src="../data/roadmaps.js"></script>
+  <script src="../data/projects.js"></script>
+  <script src="../script.js"></script>
+
+</body>
 </html>
